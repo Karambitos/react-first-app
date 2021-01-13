@@ -16,10 +16,6 @@
   text-transform: uppercase;
 }
 
-/* .thead > .tr > .th:nth-child(2){
-    border: 1px solid red;
-} */
-
 .th {
   padding: 20px 0;
   width: 33%;

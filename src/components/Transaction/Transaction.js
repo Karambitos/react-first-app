@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Transaction.module.css';
 
-const Transaction = ({ items }) => {
-  return items.map(({ id, type, amount, currency }) => {
+const Transaction = ({ transactions }) => {
+  return transactions.map(({ id, type, amount, currency }) => {
     return (
       <tr key={id} className={styles.tr}>
         <td className={styles.td}>{type}</td>
@@ -15,7 +15,7 @@ const Transaction = ({ items }) => {
 };
 
 Transaction.propTypes = {
-  items: PropTypes.arrayOf(
+  transactions: PropTypes.arrayOf(
     PropTypes.shape({
       currency: PropTypes.string,
       amount: PropTypes.string,

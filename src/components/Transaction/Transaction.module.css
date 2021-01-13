@@ -5,11 +5,14 @@
   color: primary-color;
 }
 
+.td:first-child {
+  text-align: left;
+  padding-left: 14%;
+}
+.tr:nth-child(2n) {
+  background-color: #edf1f3;
+}
 .td {
   padding: 20px 0;
   text-transform: capitalize;
-}
-
-.tr:nth-child(2n) {
-  background-color: #edf1f3;
 }

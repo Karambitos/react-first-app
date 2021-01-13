@@ -7,8 +7,8 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 import Container from './components/Container/Container';
 
 import users from './user.json';
-import StatisticsData from './statistical-data.json';
 import friends from './friends.json';
+import StatisticsData from './statistical-data.json';
 import transactions from './transactions.json';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
       />
       <Statistics StatisticsData={StatisticsData} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <TransactionHistory transactions={transactions} />
     </Container>
   );
 };

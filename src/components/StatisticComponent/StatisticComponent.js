@@ -2,16 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './StatisticComponent.module.css';
 
-// function get_rand_color(){
-//     let color = Math.floor(Math.random() * 16777216).toString(16);
-//     console.log('dljsnkdnkfndsknfksd');
-//     return '#000000'.slice(0, -color.length) + color;
-// }
+let colorFu = () => {
+  let color = Math.floor(Math.random() * 16777216).toString(16);
+  return '#000000'.slice(0, -color.length) + color;
+};
 
 const StatisticComponent = ({ StatisticsData }) => {
   return StatisticsData.map(({ id, label, percentage }) => {
     return (
-      <li key={id} className={styles.item}>
+      <li
+        key={id}
+        className={styles.item}
+        style={{ backgroundColor: colorFu() }}
+      >
         {label && <span className={styles.label}>{label}</span>}
         <span className={styles.percentage}>{percentage}%</span>
       </li>
