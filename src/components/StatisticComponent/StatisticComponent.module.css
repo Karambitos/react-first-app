@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-color: red;
+}
+
+.label,
+.percentage {
+  color: #fff;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.percentage {
+  font-size: 28px;
+}

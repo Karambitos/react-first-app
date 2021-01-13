@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import StatisticsData from '../statistical-data.json';
-import StatisticComponent from '../components/StatisticComponent'
+import StatisticComponent from '../StatisticComponent/StatisticComponent';
+import styles from './Statistic.module.css';
 
-const Statistics = ({ StatisticsData }) => {    
-    return (
-        <section className="statistics">
-            <h2 className="title">Upload stats</h2>
-            <ul className="stat-list">
-                {/* {StatisticsData.map((Statistic) => {
+const Statistics = ({ StatisticsData }) => {
+  return (
+    <section className={styles.statisticBox}>
+      <h2 className={styles.title}>Upload stats</h2>
+      <ul className={styles.statList}>
+        {/* {StatisticsData.map((Statistic) => {
                     return (
                         <li key={Statistic.id}>
                             <StatisticComponent
@@ -17,11 +17,10 @@ const Statistics = ({ StatisticsData }) => {
                         </li>
                     )
                 })} */}
-                <StatisticComponent
-                    StatisticsData={ StatisticsData }/>
-            </ul>
-        </section>
-    )
+        <StatisticComponent StatisticsData={StatisticsData} />
+      </ul>
+    </section>
+  );
 };
 
 // Statistics.propTypes = {

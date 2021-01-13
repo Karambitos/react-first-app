@@ -1,0 +1,19 @@
+@value primary-color from '../../vars.module.css';
+
+.statisticBox {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+}
+
+.title {
+  text-transform: uppercase;
+  color: primary-color;
+  text-align: center;
+  padding: 30px;
+}
+
+.statList {
+  display: flex;
+  justify-content: space-between;
+}

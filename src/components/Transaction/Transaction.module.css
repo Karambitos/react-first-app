@@ -1,0 +1,15 @@
+@value primary-color from '../../vars.module.css';
+
+.tr {
+  text-align: center;
+  color: primary-color;
+}
+
+.td {
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.tr:nth-child(2n) {
+  background-color: #edf1f3;
+}
