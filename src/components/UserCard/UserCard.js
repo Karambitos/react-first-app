@@ -4,7 +4,7 @@ import styles from './UserCard.module.css';
 
 const UserCard = ({ url, name, tag, location, followers, views, likes }) => {
   return (
-    <div className={styles.profile}>
+    <section className={styles.profile}>
       <div className={styles.description}>
         <img src={url} alt="Аватар пользователя" className={styles.avatar} />
         <p className={styles.name}>{name}</p>
@@ -25,7 +25,7 @@ const UserCard = ({ url, name, tag, location, followers, views, likes }) => {
           <span className={styles.quantity}>{likes}</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 

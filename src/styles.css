@@ -26,3 +26,24 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+button {
+  transition: 300ms ease;
+  min-width: 30%;
+  padding: 20px;
+  cursor: pointer;
+  background: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  border-radius: 5px;
+}
+
+button:hover {
+  transition: 300ms ease;
+  transform: scale(1.2);
+}
+
+button:active {
+  transition: 300ms ease;
+  background: #86909d;
+}

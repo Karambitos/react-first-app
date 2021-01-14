@@ -5,6 +5,7 @@ import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import Container from './components/Container/Container';
+import Feedback from './components/Feedback';
 
 import users from './user.json';
 import friends from './friends.json';
@@ -14,6 +15,7 @@ import transactions from './transactions.json';
 const App = () => {
   return (
     <Container>
+      <Feedback />
       <UserCard
         url={users.avatar}
         name={users.name}
